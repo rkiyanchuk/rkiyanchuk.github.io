@@ -1,0 +1,22 @@
+addons:
+  apt:
+    packages:
+      - python-pygments
+
+install:
+  - curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep "browser_download_url.*deb" | cut -d '"' -f 4 | grep Linux-64bit | grep -v extended | wget -O hugo.deb -qi -
+  - sudo dpkg -i hugo.deb
+  - rm -rf public
+
+script:
+  - hugo
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  local-dir: public
+  target-branch: master
+  on:
+    branch: hugo
