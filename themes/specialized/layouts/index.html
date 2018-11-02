@@ -1,12 +1,14 @@
+
 {{ define "main" }}
-<article>
-  <p>
-    {{ range .Data.Pages }}
+  {{ range .Pages }}
+    {{ if eq .Type "post" }}
+    <!-- LIST -->
     <div>
       <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <span class="lead">{{ .Date.Format "2006-01-02" }}</span>
       <p>{{ .Summary }}</p>
     </div>
     {{ end }}
-  </p>
-</article>
+  {{ end }}
+</div>
 {{ end }}
