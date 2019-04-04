@@ -1,11 +1,11 @@
 ---
-baseURL: "https://zoresvit.github.io"
+baseURL: "https://kiyanchuk.com"
 languageCode: "en-us"
-title: "Cryptoblog by Ruslan Kiyanchuk"
+title: "Cryptography & Software Engineering"
 theme: "specialized"
 
 pygmentsStyle: github
 
 params:
   author: Ruslan Kiyanchuk
-  description: "Cryptoblog by Ruslan Kiyanchuk"
+  description: "Cryptography & Software Engineering"
