@@ -1,6 +1,7 @@
 ---
-title: "About"
-date: 2018-09-30T15:17:27-07:00
+title: About me
+hidedate: true
 draft: false
 ---
-Test
+
+This is a short bio page.

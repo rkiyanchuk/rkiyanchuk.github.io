@@ -1,7 +1,7 @@
 ---
 title: "Lorem ipsum dolor sit amet"
 date: 2018-09-30T15:17:27-07:00
-draft: false
+draft: true
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in euismod arcu.
