@@ -29,66 +29,41 @@ sit amet orci convallis, convallis ante vitae, mollis elit. In hac habitasse
 platea dictumst. Curabitur sed dui est. Ut imperdiet, diam id suscipit aliquet
 , erat dolor tempor sem, a accumsan orci libero vitae tellus.
 
-{{< highlight c "linenos=table" >}}
-#include "transformations.h"
-#include "tables.h"
+{{< highlight go >}}
+func (h highlighters) chromaHighlight(code, lang, optsStr string) (string, error) {
+	opts, err := h.cs.parsePygmentsOpts(optsStr)
+	if err != nil {
+		jww.ERROR.Print(err.Error())
+		return code, err
+	}
 
+	style, found := opts["style"]
+	if !found || style == "" {
+		style = "friendly"
+	}
 
-kalyna_t* KalynaInit(size_t block_size, size_t key_size) {
-    kalyna_t* ctx = (kalyna_t*)malloc(sizeof(kalyna_t));
+	f, err := h.cs.chromaFormatterFromOptions(opts)
+	if err != nil {
+		jww.ERROR.Print(err.Error())
+		return code, err
+	}
 
-    if (block_size == kBLOCK_128) {
-        ctx->nb = kBLOCK_128 / kBITS_IN_WORD;
-        if (key_size == kKEY_128) {
-            ctx->nk = kKEY_128 / kBITS_IN_WORD;
-            ctx->nr = kNR_128;
-        } else if (key_size == kKEY_256){
-            ctx->nk =  kKEY_256 / kBITS_IN_WORD;
-            ctx->nr = kNR_256;
-        } else {
-            fprintf(stderr, "Error: unsupported key size.\n");
-            return NULL;
-        }
-    } else if (block_size == 256) {
-        ctx->nb = kBLOCK_256 / kBITS_IN_WORD;
-        if (key_size == kKEY_256) {
-            ctx->nk = kKEY_256 / kBITS_IN_WORD;
-            ctx->nr = kNR_256;
-        } else if (key_size == kKEY_512){
-            ctx->nk = kKEY_512 / kBITS_IN_WORD;
-            ctx->nr = kNR_512;
-        } else {
-            fprintf(stderr, "Error: unsupported key size.\n");
-            return NULL;
-        }
-    } else if (block_size == kBLOCK_512) {
-        ctx->nb = kBLOCK_512 / kBITS_IN_WORD;
-        if (key_size == kKEY_512) {
-            ctx->nk = kKEY_512 / kBITS_IN_WORD;
-            ctx->nr = kNR_512;
-        } else {
-            fprintf(stderr, "Error: unsupported key size.\n");
-            return NULL;
-        }
-    } else {
-        fprintf(stderr, "Error: unsupported block size.\n");
-        return NULL;
-    }
+	b := bp.GetBuffer()
+	defer bp.PutBuffer(b)
 
-    ctx->state = (uint64_t*)calloc(ctx->nb, sizeof(uint64_t));
-    if (ctx->state == NULL)
-        perror("Could not allocate memory for cipher state.");
+	// Added debug
+	fmt.Printf("[%s] input to Chroma = `%s'\n", lang, code)
+	
+	err = chromaHighlight(b, code, lang, style, f)
+	if err != nil {
+		jww.ERROR.Print(err.Error())
+		return code, err
+	}
 
-    ctx->round_keys = (uint64_t**)calloc(ctx->nr + 1, sizeof(uint64_t**));
-    if (ctx->round_keys == NULL)
-        perror("Could not allocate memory for cipher round keys.");
+	// Added debug
+	fmt.Printf("output from Chroma = `%s'\n\n", b.String())
 
-    for (size_t i = 0; i < ctx->nr + 1; ++i) {
-        ctx->round_keys[i] = (uint64_t*)calloc(ctx->nb, sizeof(uint64_t));
-        if (ctx->round_keys[i] == NULL)
-            perror("Could not allocate memory for cipher round keys.");
-    }
-    return ctx;
+	return h.injectCodeTag(`<div class="highlight">`+b.String()+"</div>", lang), nil
 }
 
 {{< / highlight >}}

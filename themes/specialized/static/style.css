@@ -9,3 +9,8 @@
 .nav-link {
     font-size: larger;
 }
+
+pre {
+    padding: 2ex;
+    border-radius: 5px;
+}
