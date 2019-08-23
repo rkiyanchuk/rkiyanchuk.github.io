@@ -1,10 +1,7 @@
 {{ define "main" }}
-  {{ range .Data.Pages }}
-  <div>
+  {{ range .Site.RegularPages }}
     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
     <span class="lead">{{ .Date.Format "2006-01-02" }}</span>
     <p>{{ .Summary }}</p>
-  </div>
   {{ end }}
-</div>
 {{ end }}
