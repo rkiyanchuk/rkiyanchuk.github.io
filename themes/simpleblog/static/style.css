@@ -1,12 +1,8 @@
-/* set a max-width for horizontal fluid layout and make it centered */
 .container {
-  max-width: 100ex; /* or 950px */
-}
-.navbar { 
-    padding-left: 0;
+  max-width: 100ex;
 }
 
-.nav-link {
+a.nav-link {
     font-size: larger;
 }
 
