@@ -13,4 +13,15 @@
 pre {
     padding: 2ex;
     border-radius: 5px;
+    background-color: #f6f8fa !important;
+}
+
+.post-date {
+    font-family: monospace !important;
+}
+
+.post-date::before {
+    font-family: "Font Awesome 5 Free";
+    font-size: 0.9ex;
+    content: "\f073  ";
 }

@@ -2,8 +2,7 @@
 baseURL: "https://kiyanchuk.com"
 languageCode: "en-us"
 title: "Cryptography & Software Engineering"
-theme: "specialized"
-
+theme: "simpleblog"
 pygmentsStyle: github
 
 params:

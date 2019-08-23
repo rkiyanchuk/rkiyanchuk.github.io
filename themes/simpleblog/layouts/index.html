@@ -1,0 +1,10 @@
+{{ define "main" }}
+  {{ range .Site.RegularPages }}
+    {{ if eq .Type "post" }}
+    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <p><span class="post-date">{{ .Date.Format "2006-01-02" }}</span></p>
+    <p>{{ .Summary }}</p>
+    {{ end }}
+  {{ end }}
+</div>
+{{ end }}

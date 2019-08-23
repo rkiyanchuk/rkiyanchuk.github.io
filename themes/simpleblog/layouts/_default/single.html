@@ -1,0 +1,9 @@
+{{ define "main" }}
+<article>
+    <h1><a class="text-dark" href="{{ .Permalink }}">{{ .Title }}</a></h1>
+    {{ if not .Params.hidedate }}
+    <p><span class="post-date">{{ .Date.Format "2006-01-02" }}</span></p>
+    {{ end }}
+    <p>{{ .Content }}</p>
+</article>
+{{ end }}
