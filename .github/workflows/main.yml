@@ -1,0 +1,34 @@
+name: Publish website
+on:
+  push:
+    branches: 
+      - hugo
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Go 1.13
+        uses: actions/setup-go@v1
+        with:
+          go-version: 1.13
+        id: go
+        
+      - name: Install Hugo
+        run: |
+          go get github.com/gohugoio/hugo 
+          rm -rf public
+      
+      - name: Checkout code
+        uses: actions/checkout@v1
+
+      - name: Build website
+        run: $(go env GOPATH)/bin/hugo
+      
+      - name: Deploy to Github Pages
+        uses: JamesIves/github-pages-deploy-action@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BASE_BRANCH: hugo
+          BRANCH: master
+          FOLDER: public
