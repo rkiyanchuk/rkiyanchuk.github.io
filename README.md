@@ -1,2 +1,2 @@
-# zoresvit.github.io
+# rkiyanchuk.com
 Personal blog
