@@ -14,8 +14,7 @@ magna. Ut maximus nisl sed leo tincidunt imperdiet. Maecenas consectetur ante
 tellus, ac bibendum mauris vulputate at. Praesent efficitur dictum bibendum.
 Vestibulum porttitor sem ut imperdiet sollicitudin.
 
-Source code
-===========
+## Source code
 
 Curabitur ultricies metus nisl, vitae egestas nisl mollis non. Cras at libero
 mattis, bibendum est vitae, sagittis dolor. Aliquam cursus, est sed eleifend
@@ -76,9 +75,7 @@ blandit orci risus, vitae iaculis magna cursus ac. Nunc eget sagittis tellus.
 Donec sed molestie enim. Interdum et malesuada fames ac ante ipsum primis in
 faucibus. Donec id dui ac turpis finibus faucibus non feugiat ante.
 
-
-Showing LaTeX
-=============
+## Showing LaTeX
 
 In et molestie augue, sit amet pellentesque velit. Sed ornare gravida nunc
 consectetur semper. Fusce gravida nibh vel sapien vehicula, sit amet imperdiet
