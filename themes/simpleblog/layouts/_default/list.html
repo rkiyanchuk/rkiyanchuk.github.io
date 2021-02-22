@@ -1,7 +1,0 @@
-{{ define "main" }}
-  {{ range .Site.RegularPages }}
-    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-    <span class="text-monospace">{{ .Date.Format "2006-01-02" }}</span>
-    <p>{{ .Summary }}</p>
-  {{ end }}
-{{ end }}
