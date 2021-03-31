@@ -1,34 +1,18 @@
-name: Publish website
-on:
-  push:
-    branches: 
-      - hugo
+# On every push this script is executed
+on: push
+name: Build and deploy GitHub Pages
 jobs:
   build:
-    name: Build
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Go 1.13
-        uses: actions/setup-go@v1
-        with:
-          go-version: 1.13
-        id: go
-        
-      - name: Install Hugo
-        run: |
-          go get github.com/gohugoio/hugo 
-          rm -rf public
-      
-      - name: Checkout code
-        uses: actions/checkout@v1
-
-      - name: Build website
-        run: $(go env GOPATH)/bin/hugo
-      
-      - name: Deploy to Github Pages
-        uses: JamesIves/github-pages-deploy-action@master
+      # Checkout
+      - uses: actions/checkout@v2
+      # Build & deploy
+      - name: Deploy to gh-pages branch
+        uses: shalzz/zola-deploy-action@v0.13.0
         env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BASE_BRANCH: hugo
-          BRANCH: master
-          FOLDER: public
+          # Target branch
+          PAGES_BRANCH: master
+          # Provide personal access token
+          TOKEN: ${{ secrets.TOKEN }}
