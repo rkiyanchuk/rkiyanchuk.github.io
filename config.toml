@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://kiyachuk.com"
+base_url = "https://kiyanchuk.com"
 title = "Ruslan Kiyanchuk"
 description = "Software Engineering & Cryptography"
 
