@@ -5,8 +5,6 @@ description = "Software Engineering & Cryptography"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
-
-
 minify_html = true
 generate_feed = true
 
@@ -28,4 +26,9 @@ render_emoji = true
 smart_punctuation = true
 
 [extra]
-# Put all your custom variables here
+timeformat = "%Y-%M-%e" # e.g. June 14, 2021
+katex = true
+
+author = "Ruslan Kiyanchuk"
+github = "https://github.com/rkiyanchuk"
+email  = "ruslan.kiyanchuk@gmail.com"
