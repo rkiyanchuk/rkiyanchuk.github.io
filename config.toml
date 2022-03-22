@@ -10,7 +10,7 @@ generate_feed = true
 
 taxonomies = [
     {name = "tags", feed = true},
-    ]
+]
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
@@ -26,7 +26,7 @@ render_emoji = true
 smart_punctuation = true
 
 [extra]
-timeformat = "%Y-%M-%e" # e.g. June 14, 2021
+timeformat = "%Y-%m-%d"
 katex = true
 
 author = "Ruslan Kiyanchuk"
