@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Ruslan Kiyanchuk - Math</title>
+	<subtitle>Cryptography &amp; Software Engineering</subtitle>
+	<link href="https://kiyanchuk.com/tags/math/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://kiyanchuk.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-05-03T09:19:42+00:00</updated>
+	<id>https://kiyanchuk.com/tags/math/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Math Typesetting</title>
+		<published>2021-05-03T09:19:42+00:00</published>
+		<updated>2021-05-03T09:19:42+00:00</updated>
+		<link href="https://kiyanchuk.com/math-typesetting/" type="text/html"/>
+		<id>https://kiyanchuk.com/math-typesetting/</id>
+		<content type="html">&lt;p&gt;Mathematical notation in a project can be enabled by using third party JavaScript libraries.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;In this example we will be using &lt;a href=&quot;https:&#x2F;&#x2F;katex.org&#x2F;&quot;&gt;KaTeX&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a template under &lt;code&gt;&#x2F;template&#x2F;katex.html&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Within this template use the reference of &lt;a href=&quot;https:&#x2F;&#x2F;katex.org&#x2F;docs&#x2F;autorender.html&quot;&gt;Auto-render Extension&lt;&#x2F;a&gt; or host these scripts locally.&lt;&#x2F;li&gt;
+&lt;li&gt;Inlcude the template in your page templates like so: &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;{%&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; if page.extra.katex or section.extra.katex or config.extra.katex %&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;{%&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;#39;katex.html&amp;#39; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;%&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;{%&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; endif %&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;To enable KaTex globally set the parameter &lt;code&gt;extra.katex&lt;&#x2F;code&gt; to &lt;code&gt;true&lt;&#x2F;code&gt; in a project’s configuration&lt;&#x2F;li&gt;
+&lt;li&gt;To enable KaTex on a per page basis include the parameter &lt;code&gt;extra.katex = true&lt;&#x2F;code&gt; in content files&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;&#x2F;strong&gt; &lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Use the online reference of &lt;a href=&quot;https:&#x2F;&#x2F;katex.org&#x2F;docs&#x2F;supported.html&quot;&gt;Supported TeX Functions&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;examples&quot;&gt;Examples&lt;&#x2F;h3&gt;
+&lt;p&gt;
+Inline math: \(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\) 
+&lt;&#x2F;p&gt;
+&lt;p&gt;Block math:
+$$
+\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
+$$&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
