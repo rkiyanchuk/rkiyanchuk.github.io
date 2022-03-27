@@ -5,9 +5,6 @@ draft = true
 
 [taxonomies]
 tags = ["Rust", "Sample"]
-
-[extra]
-author = "Rustaceans"
 +++
 
 This is the source code of the traditional *Hello World* program.
