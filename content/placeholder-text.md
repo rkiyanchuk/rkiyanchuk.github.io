@@ -3,7 +3,7 @@ title = "Placeholder Text"
 description = "Lorem Ipsum Dolor Si Amet"
 date = 2021-05-03T09:19:42+00:00
 updated = 2021-05-03T09:19:42+00:00
-draft = true
+draft = false
 
 [taxonomies]
 tags = ["Sample"]
