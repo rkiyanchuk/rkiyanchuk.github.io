@@ -9,11 +9,13 @@ draft = false
 tags = ["Sample"]
 +++
 
-Lorem est tota propiore conpellat pectoribus de pectora summo. <!--more-->Redit
+Lorem est tota propiore conpellat pectoribus de pectora summo. Redit
 teque digerit hominumque toris verebor lumina non cervice subde tollit usus
 habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus
 inhospita parcite confusaque translucet patri vestro qui optatis lumine
 cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.
+
+<!--more-->
 
 1. Exierant elisi ambit vivere dedere
 2. Duce pollice

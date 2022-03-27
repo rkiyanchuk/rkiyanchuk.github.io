@@ -5,3 +5,12 @@ time {
 .catalogue-time {
     font-family: sans-serif;
 }
+
+pre code {
+  font-size: 100% !important;
+}
+
+pre {
+    background-color: $grey-3 !important;
+    padding: 1ex;
+}
