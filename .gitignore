@@ -1,5 +1,8 @@
 # Do not commit generated static content into the repo.
 public/
+resources/
 
 .history/
 .vscode
+
+.hugo_build.lock

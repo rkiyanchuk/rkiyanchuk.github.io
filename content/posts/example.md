@@ -1,39 +1,96 @@
 ---
 title: "Example Post"
 date: 2023-05-30T21:54:24-07:00
+tags: ["example", "foo"]
 draft: false
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex libero, volutpat non ipsum vel, condimentum luctus lectus. Vestibulum nec erat nec ante lobortis mollis. Sed a dignissim arcu, vel tincidunt eros. Aliquam velit mauris, feugiat vel volutpat id, ultrices quis nulla. Duis posuere neque ac dui hendrerit, nec mollis ligula ultricies. Duis non mattis purus. Integer porta, dolor et commodo commodo, neque mi suscipit nisl, in blandit nibh ante quis neque. Praesent lacus elit, accumsan ac quam ut, porta ornare ex.
+Hello World
+===========
 
-Sed `feugiat` erat sed velit ullamcorper euismod. Suspendisse consectetur, mauris a pretium mattis, ligula purus volutpat ligula, vitae gravida sapien sapien at ipsum. Donec quis hendrerit quam. Vivamus lobortis finibus tellus nec imperdiet. Integer aliquet aliquam odio. Nullam ornare nunc sit amet blandit laoreet. Mauris eget dolor justo. Vestibulum non ligula vel justo porttitor maximus ut vitae mauris. Donec est arcu, malesuada eget pretium in, iaculis ac dui. Etiam cursus, ex quis pellentesque convallis, magna erat eleifend elit, et dignissim dolor ipsum eu ex. Donec hendrerit, elit in lobortis dapibus, sapien tortor bibendum metus, sed porttitor metus urna venenatis erat. Donec et varius nisl.
+Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sup>script</sup> works as well!
 
-```javascript
-  function addCopyButton(containerEl) {
-    let copyBtn = document.createElement("button");
-    copyBtn.className = "highlight-copy-btn";
-    copyBtn.innerHTML = svgCopyCode;
 
-    let codeEl = containerEl.firstElementChild;
-    copyBtn.addEventListener('click', () => {
-      try {
-        let selection = selectText(codeEl);
-        document.execCommand('copy');
-        selection.removeAllRanges();
 
-        changeIcon(copyBtn, svgSuccessCode)
-      } catch(e) {
-        console && console.log(e);
-        changeIcon(copyBtn, svgFailCode)
-      }
-    });
+Second level
+------------
 
-    containerEl.appendChild(copyBtn);
-  }
+Curabitur accumsan turpis pharetra **augue tincidunt** blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.
+
+*   In fermentum leo eu lectus mollis, quis dictum mi aliquet.
+*   Morbi eu nulla lobortis, lobortis est in, fringilla felis.
+*   Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.
+*   Ut non enim metus.
+
+### Third level
+
+Quisque ante lacus, malesuada ac auctor vitae, congue [non ante](#). Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.
+
+1.  Donec blandit a lorem id convallis.
+2.  Cras gravida arcu at diam gravida gravida.
+3.  Integer in volutpat libero.
+4.  Donec a diam tellus.
+5.  Aenean nec tortor orci.
+6.  Quisque aliquam cursus urna, non bibendum massa viverra eget.
+7.  Vivamus maximus ultricies pulvinar.
+
+> Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut blandit est tellus sit amet turpis.
+
+Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et _justo sodales_ elementum. Maecenas ultrices lacus quis neque consectetur, et lobortis nisi molestie.
+
+Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis vulputate risus in luctus. Maecenas vestibulum interdum commodo.
+
+**Web**
+: The part of the Internet that contains websites and web pages
+
+**HTML**
+: A markup language for creating web pages
+
+**CSS**
+: A technology to make HTML look better
+
+
+Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.
+
+#### Fourth level
+
+Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac. Mauris euismod metus a tellus laoreet, at elementum ex efficitur.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World</title>
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>
+  </body>
+</html>
 ```
 
-Cras sagittis dui sit amet urna varius, vel facilisis justo venenatis. Aenean sed elementum mauris, vitae scelerisque nibh. Curabitur ut ante molestie, rutrum sem eu, porta leo. In quam nisl, vulputate quis dictum eget, lacinia ac justo. Duis et leo id enim pellentesque consectetur. Donec lobortis turpis vitae commodo pharetra. Vestibulum sed rhoncus felis. Curabitur id ligula arcu. Donec imperdiet, quam vel dapibus ultrices, enim lectus aliquet est, at cursus mi dolor ac ligula. Vestibulum eu efficitur odio, ullamcorper viverra mauris. Nunc gravida, eros imperdiet dapibus iaculis, risus risus venenatis ligula, tincidunt volutpat quam mauris a nisl.
+Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.
 
-> Mauris sodales sit amet velit ac aliquet. Ut tristique mollis nibh nec eleifend. Sed eu risus sodales, placerat ligula consectetur, pretium leo. Sed imperdiet turpis ullamcorper velit pulvinar, sed viverra mauris interdum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer laoreet sit amet nulla vel ultrices. Nullam placerat porta purus, id facilisis eros pulvinar vel. Morbi quis felis consectetur, ornare erat at, scelerisque mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus pretium nisl eget elit condimentum semper. Nam tortor quam, imperdiet vitae tempus in, euismod in ex.
+| One    | Two    |
+|--------|--------|
+| Three  | Four   |
+| Five   | Six    |
+| Seven  | Eight  |
+| Nine   | Ten    |
+| Eleven | Twelve |
 
-Mauris erat neque, ultricies quis consectetur eu, convallis mattis turpis. Duis in laoreet enim. In libero ex, commodo quis mi id, rutrum scelerisque urna. Nam quis pharetra dolor, sit amet varius sapien. Fusce luctus, risus eu vestibulum aliquet, ligula tortor tempus risus, eget porta enim lorem in tortor. Maecenas id turpis euismod, interdum augue at, vehicula diam. Sed magna urna, viverra sed porta ut, fringilla quis augue. Sed lectus ipsum, varius eu lorem in, vestibulum venenatis mi. Sed aliquet eros vel metus porta vehicula. Nullam mauris eros, feugiat a tincidunt sit amet, dictum sit amet est. Vestibulum nec congue nisl. Nulla facilisis congue maximus. Pellentesque tempus ullamcorper cursus. Etiam dapibus, urna nec blandit tincidunt, ex ante venenatis nunc, quis condimentum ex tellus sit amet massa. Aliquam erat volutpat. Integer eu nisl suscipit arcu viverra aliquam.
+
+Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus laoreet metus, at cursus leo est vel tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae ultricies ex sodales quis. Aliquam eu nibh in libero accumsan pulvinar. Nullam nec nisl placerat, pretium metus vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam pharetra varius metus non pellentesque.
+
+##### Fifth level
+
+Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt ligula. Vestibulum at nunc elit. Praesent aliquet ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel nisi sodales, a eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.
+
+![](https://bulma.io/images/placeholders/256x256.png) ![](https://bulma.io/images/placeholders/256x256.png)
+
+Figure 1: Some beautiful placeholders
+
+###### Sixth level
+
+Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.
+
+[^1]: Reference link goes here

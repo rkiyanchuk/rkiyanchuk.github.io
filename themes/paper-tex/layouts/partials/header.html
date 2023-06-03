@@ -1,0 +1,23 @@
+<header>
+<section class="section">
+  <div class="container has-text-centered">
+    <h1 id="header-title" class="title is-size-2 has-text-grey-dark">Ruslan Kiyanchuk</h1>
+    <h2 id="header-subtitle" class="is-family-sans-serif is-size-5 has-text-grey">
+      Applied Cryptography • Software Engineering • Application Security
+    </h2>
+  </div>
+</section>
+
+<hr class="my-1">
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-menu is-justify-content-center">
+    {{ range .Site.Menus.main }}
+    <a class="navbar-item is-size-5" href="{{ .URL }}">
+      {{ $text := print .Name | safeHTML }}
+      {{ $text }}
+    </a>
+    {{ end }}
+  </div>
+</nav>
+<hr class="my-1">
+</header>

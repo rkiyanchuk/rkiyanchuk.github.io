@@ -1,0 +1,14 @@
+name = "Paper TeX"
+license = "MIT"
+licenselink = "https://github.com/rkiyanchuk/rkiyanchuk.github.io/blob/master/LICENSE"
+description = "Modern minimalist theme for technical blog with TeX feel"
+homepage = "https://github.com/rkiyanchuk/"
+tags = ["blog", "technical"]
+features = ["minimalist"]
+min_version = "0.112.5"
+
+[author]
+  name = "Ruslan Kiyanchuk"
+  homepage = "https://github.com/rkiyanchuk"
+
+# Inspired by themes: hugo-coder, PaperMod, Tale
