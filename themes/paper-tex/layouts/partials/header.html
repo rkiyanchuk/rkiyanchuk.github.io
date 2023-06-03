@@ -1,23 +1,29 @@
 <header>
-<section class="section">
-  <div class="container has-text-centered">
-    <h1 id="header-title" class="title is-size-2 has-text-grey-dark">Ruslan Kiyanchuk</h1>
-    <h2 id="header-subtitle" class="is-family-sans-serif is-size-5 has-text-grey">
-      Applied Cryptography • Software Engineering • Application Security
-    </h2>
-  </div>
-</section>
+  <section class="section">
+    <div class="container has-text-centered">
+      <h1 id="header-title" class="title is-size-2">
+        <a class="has-text-grey-dark" href="/">Ruslan Kiyanchuk</a>
+      </h1>
+      <h2 id="header-subtitle" class="is-family-sans-serif is-size-5 has-text-grey">
+        Cryptography&nbsp• Software&nbspEngineering&nbsp• Application&nbspSecurity
+      </h2>
+    </div>
+  </section>
 
-<hr class="my-1">
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-menu is-justify-content-center">
+  <hr class="my-1">
+  <nav class="level is-size-5 my-1">
+
+    <!-- Navigation bar -->
+    <div class="level-item has-text-left"></div>
     {{ range .Site.Menus.main }}
-    <a class="navbar-item is-size-5" href="{{ .URL }}">
+    <a class="level-item is-narrow has-text-dark mx-3 px-3 py-2 is-active" href="{{ .URL }}">
       {{ $text := print .Name | safeHTML }}
       {{ $text }}
     </a>
     {{ end }}
-  </div>
-</nav>
-<hr class="my-1">
+    </p>
+    <div class="level-item has-text-right"></div>
+
+  </nav>
+  <hr class="mt-0 mb-5">
 </header>
