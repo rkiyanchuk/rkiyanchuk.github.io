@@ -14,14 +14,14 @@
   <nav class="level is-size-5 my-1">
 
     <!-- Navigation bar -->
-    <div class="level-item has-text-left"></div>
+    <div class="level-item"></div>
     {{ range .Site.Menus.main }}
-    <a class="level-item is-narrow has-text-dark mx-3 px-3 py-2 is-active" href="{{ .URL }}">
+    <a class="level-item is-narrow has-text-dark mx-3 px-3 py-2" href="{{ .URL }}">
       {{ .Name }}
     </a>
     {{ end }}
     </p>
-    <div class="level-item has-text-right"></div>
+    <div class="level-item"></div>
 
   </nav>
   <hr class="mt-0 mb-5">
