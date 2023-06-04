@@ -1,0 +1,7 @@
+{{ if or
+(and (isset .Params "toc") (eq .Params.toc true))
+(and (not (isset .Params "toc")) (gt .WordCount 800)) }}
+<aside class="mb-4">
+  {{ .TableOfContents }}
+</aside>
+{{ end }}

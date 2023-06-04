@@ -1,5 +1,5 @@
 ---
-title: "Example Post"
+title: "Example Post for Demonstration"
 date: 2023-05-30T21:54:24-07:00
 tags: ["example", "foo"]
 draft: false
