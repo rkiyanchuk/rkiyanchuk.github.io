@@ -17,8 +17,7 @@
     <div class="level-item has-text-left"></div>
     {{ range .Site.Menus.main }}
     <a class="level-item is-narrow has-text-dark mx-3 px-3 py-2 is-active" href="{{ .URL }}">
-      {{ $text := print .Name | safeHTML }}
-      {{ $text }}
+      {{ .Name }}
     </a>
     {{ end }}
     </p>

@@ -16,3 +16,18 @@ defaultcontentlanguage = "en"
 
 [markup.highlight]
 style = "github"
+
+ 
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
