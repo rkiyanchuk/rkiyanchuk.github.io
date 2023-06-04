@@ -1,3 +1,18 @@
+@font-face {
+    font-style: normal;
+    font-weight: 300;
+    font-family: 'FixelDisplay';
+    src: url('../fonts/FixelDisplay/FixelDisplay-ExtraLight.woff2') format('woff2');
+  }
+
+@font-face {
+    font-family: 'FixelDisplay';
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/FixelDisplay/FixelDisplay-SemiBold.woff2') format('woff2');
+  }
+
+
 html {
   font-size: 17px;
 }
@@ -10,8 +25,13 @@ header > h1 {
     font-family: serif !important;
 }
 
+.font-fixel {
+    font-family: 'FixelDisplay', serif;
+}
+
 #header-title {
-    font-family: 'Latin Modern', Georgia, Cambria, 'Times New Roman', Times, serif !important;
+    font-family: 'FixelDisplay' !important;
+    /* font-family: 'Latin Modern', Georgia, Cambria, 'Times New Roman', Times, serif !important; */
     /* font-family: 'Libertinus', Georgia, Cambria, 'Times New Roman', Times, serif; */
 }
 #header-subtitle {
@@ -22,3 +42,8 @@ header > h1 {
 .level-item:hover {
     background-color: #fafafa;
   }
+
+.tryzub {
+    font-size: 6rem;
+    font-weight: 300;
+}
